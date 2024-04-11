@@ -15,7 +15,7 @@ const Signup = () => {
     createUserWithEmailAndPassword(auth, email, password).then(
       signInWithEmailAndPassword(auth, email, password).then(
         updateProfile(auth.currentUser, {displayName: username})
-        ).then(navigate("/"))
+        ).then(navigate("/profile"))
       ).catch(function (error) {
         alert(error)
       })

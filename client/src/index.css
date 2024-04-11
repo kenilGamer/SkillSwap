@@ -35,25 +35,7 @@ background: linear-gradient(264deg, #503DC5 18.95%, rgba(61, 48, 144, 0.76) 80.4
 .title{
     font-family: op;
 }
-.dark {
-    @apply bg-slate-900 text-white;
-}
-.dark2{
-    @apply bg-slate-700 text-white;
-}
-.dark3{
-    @apply bg-slate-900 text-white border-b-white border-l-white;
-}
-.active-link {
-    @apply bg-blue-600 text-white rounded-lg;
-}
 
-.accent-bg {
-    @apply bg-[#EBF2FF];
-}
-*::-webkit-scrollbar {
-    width: 0px;
-}
 
 /* Track */
 *::-webkit-scrollbar-track {

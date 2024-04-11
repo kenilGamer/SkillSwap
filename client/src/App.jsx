@@ -14,9 +14,10 @@ import Login from './Pages/login/Login';
 import Signup from './Pages/signup/Signup';
 import { auth } from './Firebase/Firebase';
 import { loginUser, setLoading } from './features/userSlice';
-
+import { useNavigate } from 'react-router-dom'; 
 
 function Layout() {
+    const navigate = useNavigate();
     return (
         <div className="flex h-screen">
             <Navbar />
@@ -42,7 +43,7 @@ const App = () => {
                 );
                 dispatch(setLoading(false));
             }else{
-                console.log("user is not logged in");
+                navigate('/login')
             }
         })
     });

@@ -11,9 +11,12 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const handleLogin = () =>{
     try{
+      if (condition) {
+        
+      }
       signInWithEmailAndPassword(auth, email, password).then(navigate('/'))
     }catch(error){
-      console.log(error);
+      console.log(error,11);
     }
   
   } 

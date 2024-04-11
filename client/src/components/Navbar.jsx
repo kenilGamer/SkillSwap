@@ -17,6 +17,7 @@ const Navbar = () => {
     const handLogout = () =>{
         dispatch(loginUser())
         signOut(auth)
+        alert('dd')
     }
     return (
         <div className="accent-bg h-screen w-14 p-2 shadow-[0px_1px_4px_#00000070] flex flex-col items-center justify-between flex-shrink-0">
@@ -39,7 +40,7 @@ const Navbar = () => {
                 </NavLink>
             </div>
             {/* <span>{user.email}</span> */}
-            <Button bg="#00AFF6" colorScheme="twitter" py="5px" px="5px" borderRadius="300" onClick={handLogout}>   <MdOutlineLogout size="30px" className="rotate-180" /></Button>
+            <button className='bg-sky-400 rounded-full p-1 text-white' onClick={handLogout}>   <MdOutlineLogout size="30px" className="rotate-180" /></button>
         </div>
     );
 };
